@@ -4,14 +4,14 @@
             
         </div>
          <div class="galeria">
-        <span style="--i:1">><img src="/src/assets/imagens/colarcritalr1.png"></span>
-        <span style="--i:2"><img src="/src/assets/imagens/brincocolarping.png"></span>
-        <span style="--i:3"><img src="/src/assets/imagens/colabrink1.png"></span>
-        <span style="--i:4"><img src="/src/assets/imagens/Tom1.jpg"></span>
-        <span style="--i:5"><img src="/src/assets/imagens/colarpinverde1.png"></span>
-        <span style="--i:6"><img src="/src/assets/imagens/colarping1.png"></span>
-        <span style="--i:7"><img src="/src/assets/imagens/colar3pingverde1.png"></span>
-        <span style="--i:8"><img src="/src/assets/imagens/correntinhacoracao1.png"></span>
+        <span style="--i:1"><img src="../assets/imagens/colarcritalr1.png"></span>
+        <span style="--i:2"><img src="../assets/imagens/brincocolarping.png"></span>
+        <span style="--i:3"><img src="../assets/imagens/colabrink1.png"></span>
+        <span style="--i:4"><img src="../assets/imagens/Tom1.jpg"></span>
+        <span style="--i:5"><img src="../assets/imagens/colar3pingverde1.png"></span>
+        <span style="--i:6"><img src="../assets/imagens/colarping1.png"></span>
+        <span style="--i:7"><img src="../assets/imagens/colar3pingverde1.png"></span>
+        <span style="--i:8"><img src="../assets/imagens/correntinhacoracao1.png"></span>
               
     </div>     
 </div>
@@ -23,11 +23,12 @@
   display: flex;
 }
 .imagem{
-  width:400px;
-  height:380px;
-  margin-top:90px;
-  margin-left:-130px;
-  background-image:url(../assets/imagens/diamente3.PNG);
+  float: left;
+  width:350px;
+  height:300px;
+  margin-top:40px;
+  margin-left:5px;
+  background-image:url(../assets/imagens/diamente3.png);
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center
@@ -35,9 +36,10 @@
   .galeria span img:hover{transform:translateY(3px) scale(1.5);
   cursor:pointer}galeria:hover{animation-play-state:paused
   }
-  .galeria{position:relative;
-  top:160px;
-  left:395px;
+  .galeria{
+  position:relative;
+  top:3rem;
+  left: 30rem;
   width:100px;
   height:100px;
   transform-style:preserve-3d;
@@ -57,7 +59,8 @@
       transform-style:preserve-3d;
       transform:rotateY(calc(var(--i) * 45deg)) translateZ(350px)
       }
-      .galeria nav img{position:absolute;
+      .galeria nav img{
+      position:absolute;
       top:0;
       left:0;
       width:100%;
