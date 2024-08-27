@@ -2,8 +2,8 @@
   <div class="rodape">
     <div class="conteudos">
           <div class="contato">
-            <h5>Central de Atendimento </h5>
-            <h6>Tel: (11)3333-3333</h6>
+            <h3>Central de Atendimento </h3>
+            <h5>Tel: (11)3333-3333</h5>
             <p>Seg. a Sex das 08hs as 17hs <br>Sac : contato@tomjoias.com.br</p>
             
             
@@ -45,10 +45,9 @@ export default {
  
   display: flex;
   width: 1435px;
-  height: 153.5px;
+  height: 140px;
   margin-left: -80px;
-  margin-top: 1.21rem;
-  background: rgba(232,223,223,0.267);
+  margin-top: 20.49px;
   color: aliceblue;
 }
 .contato{
@@ -59,13 +58,13 @@ export default {
 }
 .direitos .dir{
   float: left;
-  margin-top: 8rem;
+  margin-top: 7rem;
   margin-left: -14rem;
 }
 .direitos .cnpj{
   float: right;
   display: flex;
-  margin-top: 130px;
+  margin-top: 110px;
   margin-left: 42rem;
 
 }

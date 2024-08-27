@@ -1,8 +1,6 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/colec">Coleçoes</router-link>
-  </nav>
+    <Menu/>
+ 
   <router-view/>
   <rodape/>
 </template>
@@ -10,6 +8,7 @@
 <script setup>
 
 import Rodape from '../src/components/rodape.vue'
+import Menu from '../src/components/Menu.vue'
 </script>
 
 <style>
