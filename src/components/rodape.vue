@@ -20,7 +20,8 @@
     
        
     <div class="direitos">
-        <p>© Tom Joias 2024. Todos os direitos reservados.Tom Joias Ltda - CNPJ: 00.000.000/0001-00</p>
+        <p class="dir">© Tom Joias 2024. Todos os direitos reservados.</p>
+        <p class="cnpj">Tom Joias Ltda - CNPJ: 00.000.000/0001-00</p>
 </div>
    
   </div>
@@ -41,13 +42,31 @@ export default {
   
 }
 .rodape{
-  border: 2px solid red;
-  display: block;
-  width: 1414px;
-  height: 160px;
-  margin-left: -70px;
-  margin-top: 22.53rem;
+ 
+  display: flex;
+  width: 1435px;
+  height: 153.5px;
+  margin-left: -80px;
+  margin-top: 1.21rem;
   background: rgba(232,223,223,0.267);
   color: aliceblue;
+}
+.contato{
+  display: block;
+  float: left;
+  margin-left:90px;
+  margin-top: 25px;
+}
+.direitos .dir{
+  float: left;
+  margin-top: 8rem;
+  margin-left: -14rem;
+}
+.direitos .cnpj{
+  float: right;
+  display: flex;
+  margin-top: 130px;
+  margin-left: 42rem;
+
 }
 </style>

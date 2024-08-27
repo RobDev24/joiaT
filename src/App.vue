@@ -4,7 +4,13 @@
     <router-link to="/colec">Coleçoes</router-link>
   </nav>
   <router-view/>
+  <rodape/>
 </template>
+
+<script setup>
+
+import Rodape from '../src/components/rodape.vue'
+</script>
 
 <style>
 #app {
