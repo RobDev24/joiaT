@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="menu">
         <nav>
     <router-link to="/log" class="log">Login</router-link> 
     <router-link to="/" class="home">Home</router-link> 
@@ -18,12 +18,17 @@ export default{
 </script>
 
 <style scoped>
-nav{
+.menu{
     display: flex;
     margin-top: -7px;
-    margin-left: -8px;
+}
+
+nav{
+    display: inline;
+    margin-top: -8px;
+    margin-left: -300px;
     width: 1280px;
-    height: 34px;
+    height: 15px;
     
 
 }
