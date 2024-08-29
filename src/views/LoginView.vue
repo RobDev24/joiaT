@@ -40,19 +40,23 @@
 
 .container{
     display: flex;
-    
     height: 63vh;
+    background-image: url('../assets/imagens/fotocapa-min.png');
+    background-position: center;
+    background-size: cover;
     
 }
 .card{
-    background-color: rgb(72, 70, 60);
-    border: 2px solid rgb(42, 192, 12);
+    
     width: 20vw;
-    height: 83%;
+    height: 40vh;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 5rem;
     color: aliceblue;
+    
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
 }
 
 h2{
@@ -76,5 +80,9 @@ button{
     margin-top: 10px;
     margin-bottom: 5px;
     padding: 3px;
+}
+
+a{
+    color: yellow;
 }
 </style>

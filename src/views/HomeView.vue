@@ -21,6 +21,11 @@
 <style scoped>
 .home{
   display: flex;
+  height: 63vh;
+  background-image: url('../assets/imagens/diamante1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .imagem{
   float: left;
@@ -31,7 +36,7 @@
   background-image:url(../assets/imagens/diamente3.png);
   background-size:cover;
   background-repeat:no-repeat;
-  background-position:center
+  background-position:center;
   }
   .galeria span img:hover{transform:translateY(3px) scale(1.5);
   cursor:pointer}galeria:hover{animation-play-state:paused
