@@ -41,7 +41,7 @@
 .container{
     display: flex;
     height: 63vh;
-    background-image: url('../assets/imagens/fotocapa-min.png');
+    background-image: url('../assets/imagens/fundo3.png');
     background-position: center;
     background-size: cover;
     
@@ -54,8 +54,8 @@
     margin-top: 30px;
     margin-left: 5rem;
     color: aliceblue;
-    
-    backdrop-filter: blur(10px);
+    background: transparent;
+    backdrop-filter: blur(15px);
     border-radius: 10px;
 }
 
