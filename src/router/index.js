@@ -38,6 +38,7 @@ const routes = [
    
     component: () => import( '../views/HistoriaView.vue')
   }
+  
   ]
 
 const router = createRouter({
