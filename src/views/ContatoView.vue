@@ -1,7 +1,7 @@
 <template>
     <div class="container">
     <div class="contato">
-        <h2>contato</h2>
+        <h2>Contato</h2>
    
     <form action="" method="post">
       <ul>
@@ -19,71 +19,84 @@
         </li>
       </ul>
     </form>
+    <button>Entrar</button>
   </div>
 </div>
 </template>
 
 <style scoped>
 .container{
-  display: flex;
+  display: block;
   height: 63vh;
-  border: 2px solid greenyellow;
+  
 }
 
 .contato{
-  display: flex;
-  border: 2px solid red;
-  width: 25vw;
-  margin-left: 1rem;
-  background-color: rgb(72, 67, 67);
-  padding: 20px;
+  display: block;
+  
+  width: 30vw;
+  height: 62vh;
+  margin-left: 10rem;
+  background: transparent;
   text-align: center;
   align-content: center;
-  
 }
 h2{
-
-  height: 5vh;
-  width: 10vw;
+  display: flex;
+  text-align: center;
+  padding: 0 50% 0 35%;
   color: aliceblue;
-  margin-left: 8rem;
-  margin-top:-10px;
-  border: 2px solid red;
+  margin-top: -2rem;
+  margin-bottom: -30px;
 
+ 
 }
 
 form{
-  display: flex;
-  color: antiquewhite;
-  margin-top: 20px;
+  display: block;
+  height: 45vh;
+  margin-top: 30px;
+  padding: 15px;
   
-
+  
 }
 ul{
   display: block;
-  width: 25vw;
-  height: 42vh;
-  margin-top: 5px;
-  margin-left: -12rem;
-  list-style-type: none;
-border: 2px solid green;
+  margin-top:-10px;
+  height: 47vh;
 
-
+  padding: 5px;
 
 }
 li{
-  padding: 5px;
-  margin-left: -65px;
+  
+  padding: 10px;
+  
+   
 }
+
 label{
   display: flex;
-  margin-left: 4.3rem;
+  color: aliceblue;
+
 }
 input{
-  width: 70%;
-  margin-left: 25px;
+  display: flex;
+  width: 90%;
+  background: transparent;
+  color: aliceblue;
+  
 }
 textarea{
-  margin-left: 25px;
+  display: flex;
+  width: 90%;
+}button{
+  display: flex;
+  padding: 5px 15px;
+  margin-left: 32px;
+  border-radius: 10px;
+  margin-bottom: -35px;
+  
 }
+
 </style>
