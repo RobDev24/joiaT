@@ -15,7 +15,7 @@
         </li>
         <li>
           <label for="mensagem">Mensagem</label>
-          <textarea name="mensagem" id="" cols="35" rows="10"></textarea>
+          <textarea name="mensagem" id="" cols="36" rows="8"></textarea>
         </li>
       </ul>
     </form>
@@ -33,26 +33,57 @@
 .contato{
   display: flex;
   border: 2px solid red;
-  width: 35vw;
-  margin-left: 15rem;
+  width: 25vw;
+  margin-left: 1rem;
   background-color: rgb(72, 67, 67);
+  padding: 20px;
+  text-align: center;
+  align-content: center;
   
 }
 h2{
+
+  height: 5vh;
+  width: 10vw;
   color: aliceblue;
-  margin-left: 12rem;
-  margin-bottom: 10px;
+  margin-left: 8rem;
+  margin-top:-10px;
+  border: 2px solid red;
+
 }
 
 form{
   display: flex;
   color: antiquewhite;
+  margin-top: 20px;
+  
 
 }
 ul{
-text-align: center;
-align-items: center;
-align-content: justify;
-margin-left: -18rem;
+  display: block;
+  width: 25vw;
+  height: 42vh;
+  margin-top: 5px;
+  margin-left: -12rem;
+  list-style-type: none;
+border: 2px solid green;
+
+
+
+}
+li{
+  padding: 5px;
+  margin-left: -65px;
+}
+label{
+  display: flex;
+  margin-left: 4.3rem;
+}
+input{
+  width: 70%;
+  margin-left: 25px;
+}
+textarea{
+  margin-left: 25px;
 }
 </style>

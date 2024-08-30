@@ -55,17 +55,17 @@ export default {
   float: left;
   width: 50vh;
   height: 60%;
-  top: 0;
+  margin-top: 2rem;
 }
 .direitos .dir{
   float: right;
-  margin-top: 120px;
-  margin-left: 42rem;
+  margin-top: 8.5rem;
+  margin-right: -65rem;
 }
 .direitos .cnpj{
   float: left;
   display: flex;
-  margin-top: 120px;
+  margin-top: 8.5rem;
  margin-left: -19rem;
 
 }
