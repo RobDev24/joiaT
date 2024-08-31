@@ -1,7 +1,9 @@
 <template>
     <div class="container">
-    <div class="contato">
-        <h2>Contato</h2>
+      <div class="card">
+        <div class="titulo">
+                <h3>Contato</h3>
+            </div>
    
         <form action="https://api.staticforms.xyz/submit" method="post">
       
@@ -12,10 +14,16 @@
         
           <label for="mail">E-mail</label>
           <input type="email" name="email" placeholder="Seu e-mail aqui" autocomplete="off" minlength="5" required>
-        
+          
+          <select class="form-select"  required>
+  <option selected>Assunto</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
         
           <label for="mensagem">Mensagem</label>
-          <textarea name="message" cols="36" rows="7"></textarea>
+          <textarea name="message" cols="36" rows="5"></textarea>
 
       <button type="submit">Enviar</button>
 
@@ -29,94 +37,79 @@
 
 <style scoped>
 .container{
-  display: block;
-  height: 63vh;
-  background-image: url('../assets/imagens/diamante1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+    display: block;
+   padding: 0rem 42.3rem;
+    height: 63vh;
+    margin-top: -4px;
+    background-image: url('../assets/imagens/fundo3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 
-.contato{
-  display: block;
-  width: 30vw;
-  height: 62vh;
-  margin-left: 10rem;
-  background: transparent;
-  text-align: center;
-  align-content: center;
-}
-h2{
-  display: flex;
-  text-align: center;
-  padding: 0 50% 0 35%;
-  color: aliceblue;
-  margin-top: -3rem;
-  margin-bottom: 20px;
+.card{
+    display: flex;
+    margin-left: -21rem;
+    height: 62vh;
+    width: 35vw;
+    background: transparent;
+    backdrop-filter: blur(10px);
 
- 
 }
-
-form{
-  display: block;
-  height: 45vh;
-  margin-top: -25px;
-  padding: 15px;
-  
-  
+.titulo{
+    margin-top: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 5.5vh;
+    color: rgb(240, 225, 12);
+    margin-bottom: -18px;
 }
-
 label{
-  display: flex;
-  color: rgb(242, 31, 16);
-  margin-top: 10px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    display: flex;
+    margin-bottom: -5px;
+    margin-top: 5px;
+    margin-left: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(240, 225, 12);
 }
 input{
-  display: flex;
-  width: 90%;
-  background: transparent;
-  color: aliceblue;
-  padding: 5px;
-  font-size: 18px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+    width: 30vw;
+    background: transparent;
+    color: aliceblue;
+    
 }
+
 textarea{
-  display: flex;
-  width: 90%;
-}button{
-  display: flex; 
-  width: 15vw;
-  justify-content: center;
-  background: rgba(238, 238, 235, 0.203);
-  color:blue;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 5px;
-  margin-left: 4rem;
-  margin-top: 10px;
-  margin-bottom: -35px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+    width: 30vw;
+    margin-bottom: 6px;
+    background: transparent;
+    color:aliceblue;
+}
+button{
+width: 30vw;
+border-radius: 5px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: rgba(0, 0, 0, 0.347);
+color: aliceblue;
+font-size: 20px;
 }
 button:hover{
-color: aqua;
-background-color: black;
-border-radius: 25px;
-width: 26vw;
-margin-left: -3px;
-padding: 8px;
-
+    background-color: rgba(13, 244, 221, 0.18);
+    border-radius: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:aquamarine;
+    
 }
-textarea{
-  background-color: rgba(0, 0, 0, 0.373);
-  border: 2px solid rgba(0, 0, 0, 0.168);
-  color: aliceblue;
-  font-size: 16px;
+select{
+  width: 10vw;
+  height: 4vh;
+  margin-left: 2rem;
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 2px;
+  background: transparent;
+  color:aqua;
 }
 
 </style>

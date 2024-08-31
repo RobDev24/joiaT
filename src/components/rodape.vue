@@ -42,13 +42,17 @@ export default {
   
 }
 .rodape{
- 
   display: flex;
-  width: 1348px;
-  height: 120px;
-  margin-bottom: 3px;
+  width: 85.35rem;
+  height: 177px;
+  margin-top: 0.2rem;
   color: aliceblue;
-  
+    
+}
+
+h3{
+  margin-top: -10px;
+  margin-bottom: 15px;
 }
 .contato{
   display: block;
@@ -58,14 +62,16 @@ export default {
   margin-top: 1rem;
 }
 .direitos .dir{
+  display: flex;
   float: right;
-  margin-top: 7.5rem;
+  margin-top: 10rem;
   margin-right: -64rem;
 }
 .direitos .cnpj{
   float: left;
   display: flex;
-  margin-top: 7.5rem;
+  margin-top: 10rem;
+  
  margin-left: -19rem;
 
 }
