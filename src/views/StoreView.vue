@@ -11,5 +11,8 @@
 .container{
   display: flex;
   height: 63vh;
+  background-image: url('../assets/imagens/fundoperola.jpg');
+  background-position: center;
+  background-size: cover;
 }
 </style>

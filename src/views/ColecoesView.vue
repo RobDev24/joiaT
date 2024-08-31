@@ -12,7 +12,7 @@
 .container{
   display: flex;
   height: 63vh;
-  background-image: url('../assets/imagens/fundodiamantes.png');
+  background-image: url('../assets/imagens/fundoperola.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

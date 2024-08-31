@@ -15,7 +15,7 @@
         
         
           <label for="mensagem">Mensagem</label>
-          <textarea name="message" cols="36" rows="8"></textarea>
+          <textarea name="message" cols="36" rows="7"></textarea>
 
       <button type="submit">Enviar</button>
 
@@ -31,7 +31,7 @@
 .container{
   display: block;
   height: 63vh;
-  background-image: url('../assets/imagens/fundo3.png');
+  background-image: url('../assets/imagens/diamante1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,17 +69,19 @@ form{
 
 label{
   display: flex;
-  color: aliceblue;
+  color: rgb(242, 31, 16);
   margin-top: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 input{
   display: flex;
   width: 90%;
   background: transparent;
-  color:rgb(251, 255, 0);
+  color: aliceblue;
   padding: 5px;
-  font-size: 15px;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
 textarea{
@@ -90,7 +92,7 @@ textarea{
   width: 15vw;
   justify-content: center;
   background: rgba(238, 238, 235, 0.203);
-  color: aliceblue;
+  color:blue;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
@@ -98,6 +100,7 @@ textarea{
   margin-left: 4rem;
   margin-top: 10px;
   margin-bottom: -35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 }
 button:hover{
