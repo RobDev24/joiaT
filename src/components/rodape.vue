@@ -45,7 +45,7 @@ export default {
  
   display: flex;
   width: 1348px;
-  height: 140px;
+  height: 120px;
   margin-bottom: 3px;
   color: aliceblue;
   
@@ -55,17 +55,17 @@ export default {
   float: left;
   width: 50vh;
   height: 60%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .direitos .dir{
   float: right;
-  margin-top: 8.5rem;
-  margin-right: -65rem;
+  margin-top: 7.5rem;
+  margin-right: -64rem;
 }
 .direitos .cnpj{
   float: left;
   display: flex;
-  margin-top: 8.5rem;
+  margin-top: 7.5rem;
  margin-left: -19rem;
 
 }
