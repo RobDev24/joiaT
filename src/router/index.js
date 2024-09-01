@@ -37,7 +37,13 @@ const routes = [
     name: 'hitoria',
    
     component: () => import( '../views/HistoriaView.vue')
-  }
+  },
+  {
+  path: '/cadast',
+  name: 'cadastro',
+  
+  component: () => import( '../components/Cadastro.vue')
+}
   
   ]
 
