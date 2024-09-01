@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="contato">
       <div class="card">
         <div class="titulo">
                 <h3>Contato</h3>
@@ -36,21 +36,22 @@
 </template>
 
 <style scoped>
-.container{
+
+.contato{
     display: block;
-   padding: 0rem 42.3rem;
     height: 63vh;
-    margin-top: -4px;
+    margin-top: -3px;
+    margin-left: 0;
     background-image: url('../assets/imagens/fundo3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    border: 2px solid snow;
 }
 
 .card{
     display: flex;
-    margin-left: -21rem;
+    margin-left: 18rem;
     height: 62vh;
     width: 35vw;
     background: transparent;

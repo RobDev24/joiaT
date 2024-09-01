@@ -26,6 +26,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 2px solid red;
 }
 .imagem{
   float: left;

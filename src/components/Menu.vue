@@ -45,11 +45,11 @@ export default{
 .menu{
   
   display: flex;
-  width: 100vw;
+  width: 98.45vw;
   text-align: justify;
   margin-top: 0px;
   margin-bottom: 5px;
-  
+  border: 2px solid rebeccapurple;
 }
 
 

@@ -36,17 +36,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-*{
-  padding: 0;
-  margin: 0;
-  
-}
+
 .rodape{
   display: flex;
-  width: 85.35rem;
+  width: 84.28rem;
   height: 177px;
   margin-top: 0.2rem;
   color: aliceblue;
+  border: 2px solid red;
     
 }
 
@@ -64,13 +61,13 @@ h3{
 .direitos .dir{
   display: flex;
   float: right;
-  margin-top: 10rem;
+  margin-top: 9rem;
   margin-right: -64rem;
 }
 .direitos .cnpj{
   float: left;
   display: flex;
-  margin-top: 10rem;
+  margin-top: 8rem;
   
  margin-left: -19rem;
 

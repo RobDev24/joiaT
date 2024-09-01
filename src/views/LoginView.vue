@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="login">
         <div class="card">
             <div class="titulo">
                 <h3>Contato</h3>
@@ -23,21 +23,22 @@
 </template>
 
 <style scoped>
-.container{
+.login{
     display: block;
     border: 2px solid rebeccapurple;
-   padding: 0rem 42.3rem;
     height: 62vh;
     background-image: url('../assets/imagens/fundo3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-top: -4px;
+    margin-left: 0;
     
 }
 
 .card{
     display: flex;
-    margin-left: -21rem;
+    margin-left:18rem;
     border: 2px solid red;
     height: 61vh;
     width: 35vw;
