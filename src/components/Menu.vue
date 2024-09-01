@@ -42,25 +42,27 @@ export default{
 </script>
 
 <style scoped>
+
 .menu{
   
   display: flex;
-  width: 98.45vw;
+  width: 100vw;
   text-align: justify;
   margin-top: 0px;
   margin-bottom: 5px;
   border: 2px solid rebeccapurple;
+
 }
 
-
 nav{
-  display: flex;
 
+  display: flex;
   width: 100%;
   height: 6vh;
   align-content: center;
   align-items: center;
   text-align: justify;
   text-decoration: none;
+
 }
 </style>

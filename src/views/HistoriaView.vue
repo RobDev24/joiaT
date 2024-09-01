@@ -8,7 +8,8 @@
 
 .historia{
   border: 2px solid #fff;
-  height: 50vh;
+  height: 63vh;
+  margin-top: -4px;
 }
 
 </style>

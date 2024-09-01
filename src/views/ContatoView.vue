@@ -1,6 +1,6 @@
 <template>
     <div class="contato">
-      <div class="card">
+      <div class="formulario">
         <div class="titulo">
                 <h3>Contato</h3>
             </div>
@@ -16,7 +16,7 @@
           <input type="email" name="email" placeholder="Seu e-mail aqui" autocomplete="off" minlength="5" required>
           
           <select class="form-select"  required>
-  <option selected>Assunto</option>
+  <option selected>Escolha o assunto</option>
   <option value="1">One</option>
   <option value="2">Two</option>
   <option value="3">Three</option>
@@ -40,29 +40,31 @@
 .contato{
     display: block;
     height: 63vh;
-    margin-top: -3px;
+    margin-top: -2px;
     margin-left: 0;
     background-image: url('../assets/imagens/fundo3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 2px solid snow;
+    
 }
 
-.card{
-    display: flex;
+.formulario{
+    display: block;
     margin-left: 18rem;
-    height: 62vh;
+    height: 63vh;
     width: 35vw;
-    background: transparent;
+    border-radius: 10px;
+    background: rgb(56, 57, 57);
+    
     backdrop-filter: blur(10px);
-
+    
 }
 .titulo{
     margin-top: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 5.5vh;
-    color: rgb(240, 225, 12);
+    color:rgb(211, 238, 238);
     margin-bottom: -18px;
 }
 label{
@@ -72,7 +74,7 @@ label{
     margin-left: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    color: rgb(240, 225, 12);
+    color: rgba(42, 181, 240, 0.567);
 }
 input{
     width: 30vw;
@@ -83,7 +85,7 @@ input{
 
 textarea{
     width: 30vw;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     background: transparent;
     color:aliceblue;
 }
@@ -103,14 +105,14 @@ button:hover{
     
 }
 select{
-  width: 10vw;
+  width: 12vw;
   height: 4vh;
   margin-left: 2rem;
   margin-top: 5px;
   font-size: 15px;
   padding: 2px;
-  background: transparent;
-  color:aqua;
+  background: #474343;
+  color:rgb(211, 238, 238);
 }
 
 </style>

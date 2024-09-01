@@ -22,34 +22,31 @@
 .home{
   display: flex;
   height: 63vh;
+  margin-top: -3px;
   background-image: url('../assets/imagens/diamante1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid red;
 }
-.imagem{
-  float: left;
-  width:350px;
-  height:300px;
-  margin-top:40px;
-  margin-left:5px;
-  background-image:url(../assets/imagens/diamente3.png);
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position:center;
-  }
-  .galeria span img:hover{transform:translateY(3px) scale(1.5);
-  cursor:pointer}galeria:hover{animation-play-state:paused
+
+  .galeria span img:hover{
+    transform:translateY(3px) scale(1.5);
+     cursor:pointer;
+     
+}
+.galeria:hover{
+  animation-play-state:paused
   }
   .galeria{
   position:relative;
   top:3rem;
-  left: 30rem;
+  left: 44rem;
   width:100px;
   height:100px;
   transform-style:preserve-3d;
-  animation:rotate 20s linear infinite
+  animation:rotate 20s linear infinite;
+
   }
   @keyframes rotate{
     0%{transform:perspective(1000px) rotateY(0deg)}
