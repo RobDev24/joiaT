@@ -6,16 +6,16 @@
         </div>
 
         <label for="email">E-mail</label>
-        <input type="email" placeholder="Seu e-mail" autocomplete="off" required>
+        <input type="email" name="email" placeholder="Seu e-mail" autocomplete="off" required>
 
         <label for="password">Senha</label>
-        <input type="password" name="password" autocomplete="off" required>
+        <input type="password" name="password" placeholder="Sua senha" autocomplete="off" required>
 
         <button>Entrar</button>
 
         <hr>
 
-        <p>Não é cadastrado? <router-link to="/cadast">Cadastre-se</router-link>  </p>
+        <p>Não é cadastrado? <router-link to="/cadast" class="link-cadastro">Cadastre-se</router-link>  </p>
 
             </div>
     </div>
@@ -32,7 +32,7 @@
     background-position: center;
     background-size: cover;
     margin-top: -4px;
-    ;
+    
     
     
 }
@@ -40,37 +40,62 @@
 .col-2{
     display: block;
     margin-left:22rem;
-    border: 2px solid red;
     height: 50vh;
-    width: 18vw;
-    margin-top: 30px;
-    background: #fff;
+    width: 20vw;
+    margin-top: 35px;
+    padding: 20px;
+    backdrop-filter: blur(20px);
   }
 
   .titulo1{
     display:block;
     height: 6vh;
-    margin-top: 8px;
-    margin-bottom: 18px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    border: 2px solid rosybrown;
+     color: #fff;
   }
 
   .col-2 label, input{
     display: flex;
-    margin-left: 20px;
+    margin-left: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
     
   }
   label{
     margin-bottom:-5px;
     margin-top: 10px;
   }
+
+  input{
+    background: transparent;
+    width: 14rem;
+  }
   button{
     display: block;
-    width: 17.8vw;
-    margin-top: 14px;
+    width: 17vw;
+    margin-top: 8px;
+    margin-left: 0.5rem;
     border-radius: 5px;
+    background-color: rgba(141, 238, 14, 0.486);
+    color: #fff;
   }
+  button:hover{
+
+    background-color: aqua;
+   color: rgb(46, 5, 103);
+   border-radius: 10px;
+   font-size: 18px;
+
+  }
+
+  p{
+    color: #fff;
+  }
+.link-cadastro{
+  color: #f5e906;
+}
+::placeholder{
+  color: rgb(234, 250, 4);
+}
 
 </style>
