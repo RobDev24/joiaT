@@ -3,13 +3,17 @@
                 
         
             <form action="" method="post" class="formulario-cadastro">
+                
+                <div class="cabecalho">
 
                 <h3>Formulário de Casastro</h3>
                 <p>Todos os campos são obrigatórios</p>
 
+               </div>
+
                 <div class="dados-cad">
 
-            <label for="nome">Nome Completo</label>
+            <label for="nome">Nome</label>
             <input type="text" class="nome" placeholder="Nome completo" autocomplete="off" required minlength="8">
 
             <label for="date" class="date-nasc" >Data de Nascimento</label>
@@ -21,8 +25,8 @@
             <label for="password">Senha</label>
             <input type="password" id="senha" class="Senha" placeholder="Digite uma senha" autocomplete="off" minlength="8" maxlength="16" required >
            
-            <label for="password">Confirma Senha</label>
-            <input type="password" id="confsenha" class="Confirma-Senha" placeholder="Confirme sua senha" autocomplete="off" minlength="8" maxlength="16" required >
+            <label for="password">Confirme a Senha</label>
+            <input type="password" id="confsenha" class="Confirma-Senha" placeholder="Confirme a senha" autocomplete="off" minlength="8" maxlength="16" required >
 
             <label for="txtCep">Cep</label>
             <input id="txtCep" type="text
@@ -63,13 +67,6 @@ export default{
     name:'CadastroT',
 }
 
-function confirmarSenha(){
-    let senha = document.getElementById('senha').value;
-    let csenha = document.getElementById('confsenha').value;
-    if(csenha !== senha){
-        alert("AS SENHAS NÃO SÃO IGUAIS")
-    }
-}
 
 function buscaCep() {
     let cep = document.getElementById('txtCep').value;
@@ -102,28 +99,31 @@ window.onload = function(){
     let txtCep = document.getElementById("txtCep");
     txtCep.addEventListener("blur", buscaCep);
 
-    let senha = document.getElementById("senha");
-    let confsenha = document.getElementById("confsenha");
-
-    senha.addEventListener(confirmarSenha);
-    confsenha.addEventListener(confirmarSenha);
-
-}
+   }
 
 </script>
 
 <style scoped>
+
 .cadastro{
     display: block;
     height: 63vh;
     margin-top: -4px;
+    background-image: url('../assets/imagens/fundodiamantes.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cabecalho{
+    color:aliceblue;
   }
   .formulario-cadastro{
     display: block;
     width: 60vw;
     height: 62vh;
     margin-left: 20rem;
-    background-color: #fff;
+    backdrop-filter: blur(20px);
+    border: 2px solid #000;
     border-radius: 10px;
 
 }
@@ -154,6 +154,9 @@ input{
     background: transparent;
     
 }
+::placeholder{
+    color: #ffffffbd;
+}
 
 
 label{
@@ -161,6 +164,9 @@ label{
     margin-top: 10px;
     margin-bottom: -5px;
     margin-left: 33px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: aliceblue;
 }
 
 .Senha, .Confirma-Senha{

@@ -52,6 +52,8 @@ export default{
     width: 20vw;
     margin-top: 35px;
     padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
     backdrop-filter: blur(20px);
   }
 

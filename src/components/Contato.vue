@@ -17,9 +17,10 @@
           
           <select class="form-select"  required>
   <option selected>Escolha o assunto</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
+  <option value="1">Informação</option>
+  <option value="2">Compra</option>
+  <option value="3">Reclamação</option>
+  <option value="4">Elogios</option>
 </select>
         
           <label for="mensagem">Mensagem</label>
@@ -59,9 +60,8 @@ export default{
     height: 63vh;
     width: 35vw;
     border-radius: 10px;
-    background: rgb(56, 57, 57);
-    
-    backdrop-filter: blur(10px);
+    border: 2px solid black;
+    backdrop-filter: blur(20px);
     
 }
 .titulo{
@@ -78,13 +78,15 @@ label{
     margin-left: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    color: rgba(42, 181, 240, 0.567);
+    color: rgba(151, 240, 42, 0.808);
 }
 input{
     width: 30vw;
     background: transparent;
     color: aliceblue;
-    
+ }
+::placeholder{
+  color: aliceblue;
 }
 
 textarea{
@@ -105,7 +107,7 @@ button:hover{
     background-color: rgba(13, 244, 221, 0.18);
     border-radius: 15px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color:aquamarine;
+    color: rgba(151, 240, 42, 0.808);
     
 }
 select{
@@ -115,8 +117,7 @@ select{
   margin-top: 5px;
   font-size: 15px;
   padding: 2px;
-  background: #474343;
-  color:rgb(211, 238, 238);
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 </style>
