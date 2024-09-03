@@ -6,7 +6,9 @@
 
                 <h3>Formulário de Casastro</h3>
                 <p>Todos os campos são obrigatórios</p>
+
                 <div class="dados-cad">
+
             <label for="nome">Nome Completo</label>
             <input type="text" class="nome" placeholder="Nome completo" autocomplete="off" required minlength="8">
 
@@ -15,8 +17,13 @@
 
             <label for="mail">E-mail</label>
             <input type="email" class="mail" placeholder="E-mail" autocomplete="off" required>
-
+             
+            <label for="password">Senha</label>
+            <input type="password" id="senha" class="Senha" placeholder="Digite uma senha" autocomplete="off" minlength="8" maxlength="16" required >
            
+            <label for="password">Confirma Senha</label>
+            <input type="password" id="confsenha" class="Confirma-Senha" placeholder="Confirme sua senha" autocomplete="off" minlength="8" maxlength="16" required >
+
             <label for="txtCep">Cep</label>
             <input id="txtCep" type="text
             " class="cep" autocomplete="off" required>
@@ -47,9 +54,6 @@
         </div>
      </form>
        
-       
-          
-   
 </div>
 
 </template>
@@ -58,6 +62,13 @@
 export default{
     name:'CadastroT',
 }
+
+function confirmSenha() {
+    let senha = document.getElementById('senha');
+    let confsenha = document.getElementById('confsenha');
+    if()
+}
+
 function buscaCep() {
     let cep = document.getElementById('txtCep').value;
     if(cep !== ""){
@@ -96,17 +107,25 @@ window.onload = function(){
 .cadastro{
     display: block;
     height: 63vh;
-    border: 2px solid #fff;
     margin-top: -4px;
+  }
+  .formulario-cadastro{
+    display: block;
+    width: 60vw;
+    height: 62vh;
+    margin-left: 20rem;
+    background-color: #fff;
+    border-radius: 10px;
+
 }
+
 .dados-cad {
     display: flexbox;
     width: 60vw;
     height: 51vh;
     margin-top: -16px;
-   overflow: auto;
-    border: 2px solid red;
-
+    overflow: auto;
+    
 }
  .cep, .numero{
     height: 30px;
@@ -122,24 +141,26 @@ window.onload = function(){
    height: 30px;
    margin-left: 2rem;
 }
+input{
+    background: transparent;
+    
+}
 
 
 label{
     display: flex;
     margin-top: 10px;
+    margin-bottom: -5px;
     margin-left: 33px;
 }
+
+.Senha, .Confirma-Senha{
+    display: flex;
+    margin-left: 2rem;
+}
+.senha
 .date-nasc{
     margin-left: 35px;
-}
-.formulario-cadastro{
-    display: block;
-    width: 60vw;
-    height: 62vh;
-    margin-left: 20rem;
-    background-color: #fff;
-
-    border: 2px solid yellow;
 }
 
 .btn-cadastro{
@@ -148,17 +169,31 @@ label{
     margin-top: 1em;
     margin-bottom: 0.5rem;    
     margin-left: 2rem;
-
-    border: 2px solid red;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.754);
+    color: rgb(4, 246, 234);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
 }
 
 .btn-login{
     display: flex;
     margin-top: 1.5rem;
     margin-left: 20rem;
+    
 }
 .route-login{
 margin-left: 8px;
-
+background-color: rgba(0, 170, 255, 0.597);
+color:rgb(5, 14, 189);
+padding: 0px 8px;
+border-radius: 5px;
+text-decoration: none;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn-cadastro:hover, .route-login:hover{
+    border-radius: 10px;
+    background-color:coral;
+    color: black;
 }
 </style>
