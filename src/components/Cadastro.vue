@@ -63,10 +63,12 @@ export default{
     name:'CadastroT',
 }
 
-function confirmSenha() {
-    let senha = document.getElementById('senha');
-    let confsenha = document.getElementById('confsenha');
-    if()
+function confirmarSenha(){
+    let senha = document.getElementById('senha').value;
+    let csenha = document.getElementById('confsenha').value;
+    if(csenha !== senha){
+        alert("AS SENHAS NÃO SÃO IGUAIS")
+    }
 }
 
 function buscaCep() {
@@ -99,6 +101,13 @@ function buscaCep() {
 window.onload = function(){
     let txtCep = document.getElementById("txtCep");
     txtCep.addEventListener("blur", buscaCep);
+
+    let senha = document.getElementById("senha");
+    let confsenha = document.getElementById("confsenha");
+
+    senha.addEventListener(confirmarSenha);
+    confsenha.addEventListener(confirmarSenha);
+
 }
 
 </script>

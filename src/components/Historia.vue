@@ -4,6 +4,13 @@
   </div>
 </template>
 
+<script>
+
+export default{
+  name:'HistoriaH'
+}
+</script>
+
 <style scoped>
 
 .historia{

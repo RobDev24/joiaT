@@ -34,7 +34,11 @@
   </div>
 </div>
 </template>
-
+<script>
+export default{
+    name: 'ColecoesC'
+  }
+</script>
 <style scoped>
 
 .contato{

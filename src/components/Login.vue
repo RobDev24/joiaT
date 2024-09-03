@@ -21,6 +21,14 @@
     </div>
 </template>
 
+<script>
+
+export default{
+  name: 'LoginG'
+}
+
+</script>
+
 <style scoped>
 
 .login{

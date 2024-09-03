@@ -7,7 +7,7 @@ const routes = [
     path: '/log',
     name: 'login',
    
-    component: () => import( '../views/LoginView.vue')
+    component: () => import( '../components/Login.vue')
   },
   {
     path: '/',
@@ -18,25 +18,25 @@ const routes = [
     path: '/colec',
     name: 'coleçoes',
    
-    component: () => import( '../views/ColecoesView.vue')
+    component: () => import( '../components/Colecoes.vue')
   },
   {
     path: '/loja',
     name: 'store',
    
-    component: () => import( '../views/StoreView.vue')
+    component: () => import( '../components/Store.vue')
   },
   {
     path: '/contat',
     name: 'contato',
    
-    component: () => import( '../views/ContatoView.vue')
+    component: () => import( '../components/Contato.vue')
   },
   {
     path: '/hist',
     name: 'hitoria',
    
-    component: () => import( '../views/HistoriaView.vue')
+    component: () => import( '../components/Historia.vue')
   },
   {
   path: '/cadast',
