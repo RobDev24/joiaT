@@ -4,15 +4,15 @@
             <div class="titulo1">
                 <h4>Login</h4>
         </div>
-
+        <form action="" method="post">
         <label for="email">E-mail</label>
         <input type="email" name="email" placeholder="Seu e-mail" autocomplete="off" required>
 
         <label for="password">Senha</label>
         <input type="password" name="password" placeholder="Sua senha" autocomplete="off" required>
 
-        <button>Entrar</button>
-
+        <button type="submit" >Entrar</button>
+      </form>
         <hr>
 
         <p>Não é cadastrado? <router-link to="/cadast" class="link-cadastro">Cadastre-se</router-link>  </p>
@@ -33,13 +33,13 @@ export default{
 
 .login{
     display: block;
-    border: 2px solid rebeccapurple;
     height: 63vh;
     background-image: url('../assets/imagens/fundo3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: -4px;
+    margin-top: -60px;
+    padding: -2rem 0;
     
     
     
@@ -50,8 +50,8 @@ export default{
     margin-left:22rem;
     height: 50vh;
     width: 20vw;
-    margin-top: 35px;
-    padding: 20px;
+    margin-top: 67px;
+    padding: 20px 0;
     border: 2px solid black;
     border-radius: 10px;
     backdrop-filter: blur(20px);
@@ -87,7 +87,7 @@ export default{
     margin-left: 0.5rem;
     border-radius: 5px;
     background-color: rgba(141, 238, 14, 0.486);
-    color: #fff;
+      
   }
   button:hover{
 

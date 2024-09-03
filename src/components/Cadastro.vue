@@ -17,7 +17,7 @@
             <input type="text" class="nome" placeholder="Nome completo" autocomplete="off" required minlength="8">
 
             <label for="date" class="date-nasc" >Data de Nascimento</label>
-            <input type="date" class="data-nasc" placeholder="data de nascimento" autocomplete="off" required>
+            <input type="date" class="data-nasc" autocomplete="off" required>
 
             <label for="mail">E-mail</label>
             <input type="email" class="mail" placeholder="E-mail" autocomplete="off" required>
@@ -142,6 +142,7 @@ window.onload = function(){
 }
 .data-nasc{
     margin-left: -37rem;
+    color: rgba(234, 250, 4, 0.786);
 }
 
   .nome, .mail, .rua, .bairro, .cidade, .estado{
@@ -155,7 +156,7 @@ input{
     
 }
 ::placeholder{
-    color: #ffffffbd;
+    color: rgba(234, 250, 4, 0.786);
 }
 
 
@@ -185,8 +186,8 @@ label{
     margin-bottom: 0.5rem;    
     margin-left: 2rem;
     border-radius: 5px;
-    background-color: rgba(0, 0, 255, 0.754);
-    color: rgb(4, 246, 234);
+    background-color: rgba(141, 238, 14, 0.486);
+    color: #fff;
     font-family:Georgia, 'Times New Roman', Times, serif;
    
 }
@@ -195,12 +196,13 @@ label{
     display: flex;
     margin-top: 1.5rem;
     margin-left: 20rem;
+    color: #fff;
     
 }
 .route-login{
 margin-left: 8px;
-background-color: rgba(0, 170, 255, 0.597);
-color:rgb(5, 14, 189);
+background-color: rgba(141, 238, 14, 0.486);
+color: #fff;
 padding: 0px 8px;
 border-radius: 5px;
 text-decoration: none;
